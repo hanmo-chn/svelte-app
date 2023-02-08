@@ -1,30 +1,28 @@
 <script lang="ts">
     import Buttons from "../lib/message-box/Buttons";
+    import Button from "@hanmotec/tsui-button";
 
     export let button: number;
+
+    let isSecondary: boolean = false;
 
     let text = "关闭";
 
     $: {
         switch (button) {
             case Buttons.BTN_YES:
-                text = "是";
+                text = "确认";
                 break;
             case Buttons.BTN_CLOSE:
                 text = "关闭";
                 break;
-            case Buttons.BTN_NO:
-                text = "否";
-                break;
             case Buttons.BTN_CANCEL:
-                text = "放弃";
-                break;
-            case Buttons.BTN_OK:
-                text = "确认";
+                isSecondary = true;
+                text = "取消";
                 break;
             default:
                 text = "未知"
         }
     }
 </script>
-<button style="width: 80px" on:click>{text}</button>
+<Button style="width: 60px" secondary={isSecondary} on:click>{text}</Button>

@@ -1,23 +1,15 @@
 type ShowIndicator= (msg: string) => void;
 type HideIndicator = () => void;
 
-interface _Indicator {
+export default interface Indicator {
     show?: ShowIndicator,
     hide?: HideIndicator
 }
 
-declare global {
-    interface Window { Indicator: _Indicator; }
+export const initialize = (show: ShowIndicator, hide: HideIndicator): void => {
+    window.Indicator = {
+        show,
+        hide
+    };
 }
 
-const Indicator:_Indicator = {}
-
-const initialize = (show: ShowIndicator, hide: HideIndicator): void => {
-    Indicator.show = show;
-    Indicator.hide = hide;
-    window.Indicator = Indicator;
-}
-
-export {initialize}
-
-export default Indicator;

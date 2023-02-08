@@ -1,6 +1,6 @@
 {
   "name": "@hanmotec/tsui-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
   "main": "index.js",
@@ -19,6 +19,7 @@
     "@hanmotec/tsui-drawer": "^0.0.1",
     "@hanmotec/tsui-form-field": "^0.0.1",
     "@hanmotec/tsui-form-layout": "^0.0.1",
+    "@hanmotec/tsui-themes": "^0.0.5",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "@sveltejs/package": "next",

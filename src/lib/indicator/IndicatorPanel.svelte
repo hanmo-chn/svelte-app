@@ -1,6 +1,6 @@
 <script lang="ts">
 
-    import Indicator, {initialize} from "./Indicator";
+    import {initialize} from "./Indicator";
     import {onMount} from "svelte";
     import { fade } from 'svelte/transition';
     import { quintOut } from 'svelte/easing';
@@ -18,7 +18,7 @@
     }
 
     onMount(()=>{
-        Indicator.show == null && initialize(showIndicator, hideIndicator);
+        initialize(showIndicator, hideIndicator);
     })
 
 </script>

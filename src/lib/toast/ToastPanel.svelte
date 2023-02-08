@@ -2,7 +2,8 @@
     import { fly } from 'svelte/transition';
     import { quintOut } from 'svelte/easing';
 
-    import Toast, {initialize} from './Toast';
+    import {initialize} from './Toast';
+    import {onMount} from "svelte";
 
     /**
      * 显示一个Toast信息
@@ -26,8 +27,9 @@
             }, 1000);
         }
     }
-
-    Toast.show == null && initialize(showToast);
+    onMount(()=>{
+        initialize(showToast);
+    })
 
     let visible: boolean = false;
     let isError: boolean = true;

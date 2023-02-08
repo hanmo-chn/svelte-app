@@ -1,6 +1,6 @@
 <script lang="ts">
-    import TicatecToast from "./toast/TicatecToast.svelte";
-    import TicatecIndicator from "./indicator/TicatecIndicator.svelte";
+    import TicatecToast from "./toast/ToastPanel.svelte";
+    import TicatecIndicator from "./indicator/IndicatorPanel.svelte";
     import MessageBoxPanel from "./message-box/MessageBoxPanel.svelte";
     import {onMount, SvelteComponent} from "svelte";
 

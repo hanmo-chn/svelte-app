@@ -14,6 +14,7 @@
     const handleSaveData = () => {
         console.log('处理保存数据');
         Indicator.show('保存数据...');
+        setTimeout(()=>{Indicator.hide()}, 4000);
     }
 
 </script>

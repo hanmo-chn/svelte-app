@@ -1,19 +1,16 @@
 <script lang="ts">
     import {createEventDispatcher} from "svelte";
+    import Button from "@hanmotec/tsui-button";
 
     const dispatch = createEventDispatcher();
 
-    let enable = true;
 
     const handleSaveClick = () => {
-        if (enable) {
-            enable = false;
-            dispatch('save');
-            setTimeout(()=>{enable = true}, 500);
-        }
+        console.log('button save click');
+        dispatch('save');
     }
 
 
 </script>
-<button style="width: 80px" on:click={handleSaveClick}>保存</button>
-<button style="width: 80px" on:click={()=>{dispatch('close')}}>关闭</button>
+<Button style="width: 60px" on:click={handleSaveClick}>保存</Button>
+<Button style="width: 60px" secondary on:click={()=>{dispatch('close')}}>关闭</Button>

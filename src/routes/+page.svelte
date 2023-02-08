@@ -1,4 +1,6 @@
 <script lang="ts">
+    import "@hanmotec/tsui-themes/tsui-themes.css";
+    import "../lib/indicator/Indicator";
     import TicatecAppBoard from "../lib/TicatecAppBoard.svelte";
     import DialogButton from "./DialogButton.svelte";
     import Drawer from "@hanmotec/tsui-drawer"
