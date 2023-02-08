@@ -1,3 +1,4 @@
+import Buttons from "./Buttons";
 const MR_CANCEL = 0;
 const MR_OK = 1;
 const MR_CLOSE = 2;
@@ -15,7 +16,6 @@ export default interface MessageBox {
     show: ShowMessageBox,
     confirm: ShowConfirmMessage,
     ModalResult: any
-    title?: string,
     buttons?: any
 }
 
@@ -29,7 +29,8 @@ const initialize = (show: ShowMessage, confirm: ShowConfirmMessage): void=> {
     window.MessageBox = {
         show,
         confirm,
-        ModalResult
+        ModalResult,
+        buttons: Buttons
     }
 };
 

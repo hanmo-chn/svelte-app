@@ -8,9 +8,9 @@
 
     export let buttonClass: SvelteComponent;
     export let cancellable:boolean = false;
+    export let title;
 
     let visible = false;
-    let title = '';
     let type: 'warning' | 'question' | 'info' = 'info';
     let message: string = '';
     let buttons: number = Buttons.BTN_OK | Buttons.BTN_CLOSE;
@@ -31,8 +31,6 @@
 
     const showBox = (_message: string, _callback: ActionCallback): void => {
         visible = true;
-        // @ts-ignore
-        title = window.MessageBox.title || '信息提示';
         callback = _callback;
         message = _message;
     }

@@ -1,6 +1,6 @@
 {
   "name": "@hanmotec/tsui-app",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "type": "module",
   "main": "index.js",
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@hanmotec/tsui-app-module": "^0.0.1",
+    "@hanmotec/tsui-button": "^0.0.1",
     "@hanmotec/tsui-common": "^0.0.1",
     "@hanmotec/tsui-drawer": "^0.0.1",
     "@hanmotec/tsui-form-field": "^0.0.1",

@@ -7,6 +7,7 @@
     export let style: string = '';
     export let DialogButton: SvelteComponent = null;
     export let isSingle:boolean = false;
+    export let title: string = '信息提示'
 
     onMount(()=>{
 
@@ -42,6 +43,6 @@
     </div>
 </div>
 
-<MessageBoxPanel buttonClass={DialogButton}/>
+<MessageBoxPanel {title} buttonClass={DialogButton}/>
 <TicatecIndicator/>
 <TicatecToast/>
