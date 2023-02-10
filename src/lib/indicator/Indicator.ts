@@ -7,6 +7,7 @@ export default interface Indicator {
 }
 
 export const initialize = (show: ShowIndicator, hide: HideIndicator): void => {
+    console.debug('初始化Indicator')
     window.Indicator = {
         show,
         hide

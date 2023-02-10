@@ -1,6 +1,6 @@
 {
   "name": "@hanmotec/tsui-app",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "type": "module",
   "main": "index.js",
@@ -24,6 +24,7 @@
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "@sveltejs/package": "next",
+    "@ticatec/enhanced-utils": "^0.0.4",
     "node-sass": "^8.0.0",
     "sass": "^1.57.1",
     "svelte": "^3.44.0",

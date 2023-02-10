@@ -5,6 +5,7 @@ export default interface Toast {
 }
 
 export function initialize(show: ShowToast): void {
-    window.Toast = window.Toast || {show}
+    console.debug('初始化Toast');
+    window.Toast = {show}
 }
 

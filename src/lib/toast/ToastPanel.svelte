@@ -28,6 +28,7 @@
         }
     }
     onMount(()=>{
+        console.debug('初始化Toast');
         initialize(showToast);
     })
 

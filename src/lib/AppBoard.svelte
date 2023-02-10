@@ -1,6 +1,6 @@
 <script lang="ts">
-    import TicatecToast from "./toast/ToastPanel.svelte";
-    import TicatecIndicator from "./indicator/IndicatorPanel.svelte";
+    import ToastPanel from "./toast/ToastPanel.svelte";
+    import IndicatorPanel from "./indicator/IndicatorPanel.svelte";
     import MessageBoxPanel from "./message-box/MessageBoxPanel.svelte";
     import {onMount, SvelteComponent} from "svelte";
 
@@ -44,5 +44,5 @@
 </div>
 
 <MessageBoxPanel {title} buttonClass={DialogButton}/>
-<TicatecIndicator/>
-<TicatecToast/>
+<IndicatorPanel/>
+<ToastPanel/>
