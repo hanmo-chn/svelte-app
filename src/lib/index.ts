@@ -1,5 +1,4 @@
 import AppBoard from "./AppBoard.svelte";
-import AppTabContainer from "./app-tab-bar/AppTabContainer.svelte";
 import type {Toast} from "./toast";
 import type {MessageBox} from "./message-box";
 import type {Indicator} from "./indicator";
@@ -16,5 +15,3 @@ declare global {
 }
 
 export default AppBoard;
-export {AppTabContainer}
-export {MessageBoxPanel, ToastPanel, IndicatorPanel}
